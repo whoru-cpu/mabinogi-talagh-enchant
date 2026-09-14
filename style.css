@@ -204,6 +204,11 @@ td:nth-child(2) {
 
 /* 옵션 */
 
+th:nth-child(3),
+td:nth-child(3) {
+    width: 550px;
+}
+
 td:nth-child(3) {
     font-weight: 500;
 }
