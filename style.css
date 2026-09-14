@@ -1,0 +1,257 @@
+/* =========================================
+   탈라 가흐 신규 인챈트 정리
+   style.css
+========================================= */
+
+
+/* 기본 설정 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
+
+    background-color: #f5f6f8;
+    color: #222;
+}
+
+
+/* =========================================
+   상단 제목
+========================================= */
+
+.header {
+    width: 100%;
+    padding: 42px 20px;
+
+    background-color: #20252d;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header p {
+    margin: 8px 0 0;
+
+    font-size: 15px;
+    color: #c8cdd5;
+}
+
+
+/* =========================================
+   전체 콘텐츠
+========================================= */
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 40px auto 80px;
+}
+
+
+/* =========================================
+   최댐 / 마공 등의 큰 분류
+========================================= */
+
+.category {
+    margin-bottom: 60px;
+}
+
+.category h2 {
+    margin: 0 0 25px;
+    padding-bottom: 10px;
+
+    border-bottom: 3px solid #303640;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   머리 / 몸 / 손 / 발 / 장신구
+========================================= */
+
+.slot {
+    margin-bottom: 32px;
+}
+
+.slot h3 {
+    margin: 0 0 10px;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   인챈트 표
+========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+
+/* 표 제목 */
+
+thead {
+    background-color: #353c46;
+    color: #ffffff;
+}
+
+th {
+    padding: 13px 15px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-align: center;
+
+    border-right: 1px solid #4b535e;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+
+/* 표 내용 */
+
+td {
+    padding: 13px 15px;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e5e7eb;
+    border-right: 1px solid #eeeeee;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+
+/* 마지막 줄 선 제거 */
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* 마우스 올렸을 때 */
+
+tbody tr:hover {
+    background-color: #f4f6f8;
+}
+
+
+/* =========================================
+   각 열 크기
+========================================= */
+
+/* 접두 / 접미 */
+
+th:first-child,
+td:first-child {
+    width: 100px;
+}
+
+
+/* 인챈트 이름 */
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 220px;
+}
+
+td:nth-child(2) {
+    font-weight: 700;
+}
+
+
+/* 옵션 */
+
+td:nth-child(3) {
+    font-weight: 500;
+}
+
+
+/* =========================================
+   모바일
+========================================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 13px;
+    }
+
+    .container {
+        width: 96%;
+        margin-top: 25px;
+    }
+
+    .category h2 {
+        font-size: 21px;
+    }
+
+    .slot h3 {
+        font-size: 17px;
+    }
+
+    th,
+    td {
+        padding: 10px 7px;
+        font-size: 12px;
+    }
+
+    th:first-child,
+    td:first-child {
+        width: 65px;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 110px;
+    }
+}
